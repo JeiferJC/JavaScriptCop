@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Sencillo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link rel="stylesheet" href="sytle.css">
+<body>
+    <header>
+        <h1>Spotify Sencillo</h1>
+    </header>
+    <main>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Tu Biblioteca</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Reproduciendo ahora</h2>
+            <div class="player">
+                <img src="cover.jpg" alt="Portada del Álbum">
+                <div class="info">
+                    <h3>Nombre de la Canción</h3>
+                    <p>Artista</p>
+                </div>
+                <div class="controls">
+                    <button onclick="previousSong()">⏮️</button>
+                    <button onclick="playPause()">⏯️</button>
+                    <button onclick="nextSong()">⏭️</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
