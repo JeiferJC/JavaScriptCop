@@ -1,0 +1,40 @@
+*{
+    font-family: sans-serif;
+}
+.card{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(172, 172, 172);
+    background-color: rgb(54, 149, 212);
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 20px;
+}
+.col-1{
+    width: 30%;
+}
+.col-2{
+    width: 70%;
+    padding: 25px;
+}
+.titulo-feo{
+    color: rgb(255, 0, 0);
+    font-family: serif;
+    background-color: rgb(82, 82, 71);
+}
+ /* Estilo del botón */
+ .miBoton {
+    background-color: blue;
+    color: rgb(101, 129, 108);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Cambio de color al pasar el cursor */
+.miBoton:hover {
+    background-color: green;
+    color: blueviolet;
+}

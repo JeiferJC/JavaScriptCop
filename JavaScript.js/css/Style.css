@@ -11,3 +11,9 @@ body {
     text-align: center;
   }
   
+
+  .titulo{
+    color: crimson;
+    font-size: medium;
+    border: 1px green;
+  }

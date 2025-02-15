@@ -14,6 +14,7 @@ h1{
     margin: 2em 10%;
 }
 
+
 .item{
  border-radius: 15px;
  display: block;
@@ -36,7 +37,28 @@ h1{
 }
 
 .dark{
-    background-color: rgb(74, 45, 45);
+    background-color: rgb(12, 99, 157);
+}
+
+/* Estilo del botón */
+.miBoton {
+    background-color: rgb(81, 227, 227);
+    color: rgb(6, 6, 6);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    align-content: center;
+}
+
+/* Cambio de color al pasar el cursor */
+.miBoton:hover {
+    background-color: green;
+    color: rgb(228, 226, 229);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
 }
     
 
