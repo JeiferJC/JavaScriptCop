@@ -17,6 +17,32 @@ window.addEventListener("load", function(){
     homeButton.addEventListener("click", function(e) {
         alert("Tocaste este boton tambien ");
         homeButton.prevenDefault();
+        
     })
+
     
 })
+
+//--------AGREGA EVENTOS MOUSE-----------------//
+window.addEventListener("load", function(){
+    let boton = this.document.querySelector("#button1")
+    boton.addEventListener("mouseout",function(){
+        boton.style.color = prompt("escoge un color");
+    })
+})
+
+window.addEventListener("DOMContentLoaded", function(){
+    const botones = document.querySelectorAll(".miBoton")
+    botones.forEach(botone => {
+        botone.addEventListener("mouseover", function(){
+            botone.style.backgroundColor= "red";
+        })
+       
+        botone.addEventListener("mouseout", function(){
+            botone.style.backgroundColor= "";
+        })
+       
+        
+    });
+})
+

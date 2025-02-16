@@ -53,12 +53,6 @@ h1{
 }
 
 /* Cambio de color al pasar el cursor */
-.miBoton:hover {
-    background-color: green;
-    color: rgb(228, 226, 229);
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 
-}
     
 
