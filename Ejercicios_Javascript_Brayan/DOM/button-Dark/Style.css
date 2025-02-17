@@ -1,9 +1,4 @@
-body {
-    color: blueviolet;
-    background-color:rgb(164, 207, 120);
-    text-align: center;
-    padding: 0%;
-}
+
 h1{
     color: brown;
 }
@@ -24,10 +19,7 @@ li{
    font-weight: bolder; 
 }
 
-button{
-    color: rgb(14, 13, 13);
-    background-color: rgb(243, 0, 0);
-}
+
 p {
     font-family: Arial, sans-serif;
     font-size: 15px;
@@ -36,7 +28,7 @@ p {
     text-align: justify;
     padding: 10px;
     border-radius: 5px;
-    font-weight: bolder
+    font-weight: bolder;
 }
 .sun-imagen {
 width: 300px;
@@ -47,4 +39,22 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 margin: 100px;
 }
 
-
+body {
+    background-color: white;
+    color:black;
+    transition: background-color 0.5s, color 0.5s ;
+    text-align: center;
+    padding: 0;
+}
+.dark-mode{
+    background-color: black;
+    color: white; 
+}
+#toggleButton {
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color:rgb(222, 235, 235);
+    background-color: rgb(41, 38, 38);
+    
+}
