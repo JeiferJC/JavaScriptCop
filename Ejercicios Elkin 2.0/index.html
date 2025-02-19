@@ -9,6 +9,7 @@
 <script src="./JavaScript.js"></script>
 <button onclick="goDarkMode()" class="miBoton" >Dark Mode</button>
 <body class="dark">
+    <script src="./Formulario.js"></script>
     <h1>La familia de los felinos</h1>
     
 
@@ -20,10 +21,17 @@
              magnam delectus eius odit laudantium earum aliquid magni quia dignissimos
              officia aliquam, iure tempore deserunt animi illo.</p>
              <button class="miBoton"> otro boton</button>
+             <input type="text">
+             //GRUPO DE OPCIONES DE SELECCION MULTOPLE
+             <input type="checkbox" name="miOpcion" value="1">
+             <input type="checkbox" name="miOpcion" value="2">
+             <input type="checkbox" name="miOpcion" value="3">
+
         </div>
 
     </div>
-    <div class="contenedor ">
+    //-------------------------------------///
+    <div class="contenedor2">
         <div class="item">
          <img src="./3d-estructura-abstracta_3840x2160_xtrafondos.com.jpg" class="centro">
         <h2>The dark</h2>
@@ -31,24 +39,52 @@
              magnam delectus eius odit laudantium earum aliquid magni quia dignissimos
              officia aliquam, iure tempore deserunt animi illo.</p>
              <button class="miBoton":hover> otro boton</button>
+             <input type="email">
+             //GRUPO DE OPCIONES DE SELECCION UNICA
+             <input type="radio" name="miOpcion" value="1">
+             <input type="radio" name="miOpcion" value="2">
+             <input type="radio" name="miOpcion" value="3">
+
         </div>
 
     </div>
+    
+    //----------------------------------//
+    
     <div class="contenedor">
-        <div class="item">
-            
-         <img src="./3d-estructura-abstracta_3840x2160_xtrafondos.com.jpg" class="centro">
-        <h2>The dark</h2>
+        <div class="item">   
+
+         <img src="./3d-estructura-abstracta_3840x2160_xtrafondos.com.jpg" class="item img">
+         <h2 class="item h2">The dark</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur architecto fuga maiores repudiandae
              magnam delectus eius odit laudantium earum aliquid magni quia dignissimos
              officia aliquam, iure tempore deserunt animi illo.</p>
-             <button class="miBoton":hover> otro boton</button>
-            
-        </div>
+
+             <form action="Prevencion" class="reservation">
+            <p><input  class="number" type="number" placeholder="Numero" ></p> 
+             <input class="email" type="email" placeholder="Correo elecotronico">
+           
+             <input class="date" type="date">
+             <p><button class=" miBoton" type="submit">SEND MESSAGE</button></p>
+            </form>
+
+            </div>
 
     </div>
+
+
+
+    <select class=" centro">
+        <option value="opcion">Opcion 1</option>
+        <option value="opcion">opcion 2</option>
+        <option value="opcion">opcion 3</option>
+    </select>
     <button class="about-button">Hola </button>
     <button class="miBoton":hover> otro boton</button>
     <button id="button1">Soyt otra prueba</button>
+//------alamacenar datos de un input text y number 
+    <input type="text" id="nombre" value="OpcionA">
+    <input type="number" id="numero" value="OpcionB">
+  
 </body>
 </html>

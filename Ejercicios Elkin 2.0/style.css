@@ -8,22 +8,42 @@ h1{
 
 .contenedor{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    
+}
+
+.contenedor2{
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
+    width: 50%;
     margin: 2em 10%;
 }
 
 
 .item{
- border-radius: 15px;
- display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; /* Ajusta este valor para cambiar el tamaño de la foto */
-  max-width: 400px; /* Tamaño máximo para que no sea demasiado grande */
-  border-radius: 10px; /* Bordes redondeados para un toque más suave */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para darle un poco de profundidad */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+.item img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.item h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
 }
 
 .centro{
@@ -55,4 +75,45 @@ h1{
 /* Cambio de color al pasar el cursor */
 
     
+.email {
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+    margin-bottom: 15px; /* Ajusta el valor según el*/
+}
 
+.number{
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+    
+
+}
+
+.date {
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+    
+}
