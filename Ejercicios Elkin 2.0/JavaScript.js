@@ -46,3 +46,36 @@ window.addEventListener("DOMContentLoaded", function(){
     });
 })
 
+
+//------EVENTOS TECLADO---//
+//Solo es necesario poner en lugar de mouseover y mouseout se pone..
+//---KEYPRESS Y KEYDOWN
+
+//----Evitar enviar un formulario dos veces 
+let formulario = document.querySelector("select");
+            formulario.addEventListener("submit", function(event) {
+                event.preventDefault()
+            })
+
+//Limitar el tama;o de caracteres extra
+function limita(maximoCaracteres) {
+    var elemento = document.getElementById("texto");
+    if(elemento.value.length >= maximoCaracteres ) {
+        return false;
+    }
+    else {
+        return true;
+    }
+} 
+
+
+//------alamacenar datos de un input text y number 
+
+var nombre = document.getElementById("nombre").value;
+console.log(nombre)
+var numero= document
+
+
+window.addEventListener("load", function(){
+    let formulario= this.document.querySelector("form.reservation");
+})
