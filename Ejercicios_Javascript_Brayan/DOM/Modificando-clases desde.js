@@ -6,3 +6,5 @@ let confirmarEliminarClase = confirm("desea quitar el estilo implementado al tit
 if (confirmarEliminarClase){
     titulo.classList.remove = "titulo-destacado";
 }
+
+//.toggle() se utiliza para agregar una clase si existe la
