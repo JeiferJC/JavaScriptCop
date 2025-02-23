@@ -117,3 +117,22 @@ h1{
     outline: none;
     
 }
+
+.errores{
+    color: deeppink;
+    align-content:flex-end;
+}
+
+.texto-central {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: azure;
+}
+.contenedor2 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
