@@ -39,12 +39,99 @@ p {
     font-weight: bolder
 }
 .sun-imagen {
-width: 300px;
-height: auto;
+width: 200px;
+height: 380px;
 border: 2px solid #333;
 border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-margin: 100px;
+margin: 10px;
 }
 
+.botones {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #660d0d;
+    border-radius: 10px;
+  }
+  
+  .botones a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #191b1d;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  body {
+    background-color: white;
+    color:black;
+    transition: background-color 0.5s, color 0.5s ;
+    text-align: center;
+    padding: 0;
+}
+.dark-mode{
+    background-color: black;
+    color: white; 
+}
+#toggleButton {
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color:rgb(222, 235, 235);
+    background-color: rgb(41, 38, 38);
+    position: absolute;
+    top: 70px; 
+    left: 20px; 
+    
+}
 
+.un-parrafo {
+   
+    position: absolute; /* Posiciona el párrafo de manera absoluta */
+    top: 130px; /* Ajusta la distancia desde la parte superior */
+    left: 50px; /* Ajusta la distancia desde la parte izquierda */
+    width: 400px; /* Ajusta el ancho del párrafo */
+    background-color: #f0f0f0; /* Fondo de color para diferenciar */
+    padding: 10px; /* Espacio interior alrededor del texto */
+    border: 1px solid #000; /* Borde negro alrededor del párrafo */
+}
+
+.formato-lista{
+    
+    position: absolute; /* Posiciona el párrafo de manera absoluta */
+    top: 130px; /* Ajusta la distancia desde la parte superior */
+    right: 400px; /* Ajusta la distancia desde la parte izquierda */
+        width: 100px; /* Ajusta el ancho de la lista */
+        list-style-type: none; /* Elimina los puntos de la lista */
+        padding: 10px; /* Espacio interior alrededor de los elementos de la lista */
+        
+    }
+    
+.iris-imagen {width: 100px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+
+}
+.sung-imagen{
+    width: 100px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+
+}
+.beru-imagen{
+    width: 100px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+
+}
