@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", function(){
             botone.style.backgroundColor= "red";
         })
        
-        botone.addEventListener("mouseout", function(){
+       botone.addEventListener("mouseout", function(){
             botone.style.backgroundColor= "";
         })
        
