@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+}
+
+/* Header */
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Contenedor principal */
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    flex-direction:column;
+    margin-top: 20px; /* Espacio entre el header y el main */
+}
+
+/* Estilos para el formulario */
+form.search {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label[for="busqueda"] {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #6200ea;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #6200ea;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #3700b3;
+}
+
+button#delete {
+    background-color: #ff1744;
+    color: white;
+}
+
+button#delete:hover {
+    background-color: #d50000;
+}
+
+/* Estilos para el historial */
+h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #6200ea;
+}
+
+#busquedasRealizadas {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#busquedasRealizadas p {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #6200ea;
+    font-size: 1rem;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Empuja el footer hacia la parte inferior */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
