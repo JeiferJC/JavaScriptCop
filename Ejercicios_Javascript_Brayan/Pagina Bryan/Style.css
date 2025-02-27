@@ -109,7 +109,7 @@ margin: 10px;
         
     }
     
-.iris-imagen {width: 100px;
+#iris-imagen {width: 100px;
     height: 200px;
     border: 2px solid #333;
     border-radius: 10px;
@@ -117,7 +117,7 @@ margin: 10px;
     margin: 10px;
 
 }
-.sung-imagen{
+#sung-imagen{
     width: 100px;
     height: 200px;
     border: 2px solid #333;
@@ -126,7 +126,7 @@ margin: 10px;
     margin: 10px;
 
 }
-.beru-imagen{
+#beru-imagen{
     width: 100px;
     height: 200px;
     border: 2px solid #333;
@@ -134,4 +134,20 @@ margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
 
+}
+
+.contenedor{
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px
+}
+.tarjeta {
+    background-color: #f5f5f5;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
 }

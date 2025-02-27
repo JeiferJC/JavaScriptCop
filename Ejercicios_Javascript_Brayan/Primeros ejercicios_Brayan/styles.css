@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ }
+ 
+ #numero1 {
+    font-size: 2rem;
+    margin-top: 10px;
+ }
+ 
+ a {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ a:hover {
+    background-color: #0056b3;
+ }
+ 
+/* Contenedor para centrar los botones */
+#times {
+   display: flex; /* Utiliza Flexbox */
+   justify-content: center; /* Centra horizontalmente */
+   align-items: center; /* Centra verticalmente */
+   height: 100px; /* Altura del contenedor (ajusta según sea necesario) */
+   gap: 10px; /* Espacio entre los botones */
+ }
+ 
+ /* Estilo básico para todos los botones */
+ button {
+   background-color: #4CAF50; /* Color de fondo verde */
+   color: white; /* Color del texto blanco */
+   border: none; /* Sin borde */
+   padding: 10px 20px; /* Espaciado interno */
+   text-align: center; /* Alineación del texto */
+   text-decoration: none; /* Sin subrayado */
+   display: inline-block; /* Bloque en línea */
+   font-size: 16px; /* Tamaño de la fuente */
+   margin: 0; /* Márgenes (ajustado a cero para evitar conflictos) */
+   cursor: pointer; /* Manito al pasar sobre el botón */
+   border-radius: 5px; /* Bordes redondeados */
+   transition: background-color 0.3s ease; /* Transición suave */
+ }
+ 
+ /* Estilo para el estado hover (cuando el mouse está sobre el botón) */
+ button:hover {
+   background-color: #45a049; /* Color de fondo cuando se pasa el mouse */
+ }
+ 
+ /* Estilo para el estado activo (cuando se está presionando el botón) */
+ button:active {
+   background-color: #3e8e41; /* Color de fondo cuando se presiona el botón */
+   transform: translateY(2px); /* Efecto de presionar */
+ }
+ 
+ /* Estilo específico para cada botón */
+ #iniciar {
+   background-color: #4CAF50; /* Verde */
+ }
+ 
+ #pausa {
+   background-color: #ff9800; /* Naranja */
+ }
+ 
+ #stop {
+   background-color: #f44336; /* Rojo */
+ }
+ 
+ #acelerar {
+   background-color: #2196F3; /* Azul */
+ }
+ 
