@@ -19,12 +19,12 @@ const imagenes = document.querySelectorAll("img")
 // imagenes.forEach(i => {
 //     // i.setAttribute("alt", "imagen")
 //     i.alt = "imagen"
-    imagenes.forEach((i,index) => {
-        if (!i.hasAttribute("alt")) {
-            i.setAttribute("alt", `imagen-${index+1}`)
-        }
+    // imagenes.forEach((i,index) => {
+    //     if (!i.hasAttribute("alt")) {
+    //         i.setAttribute("alt", `imagen-${index+1}`) // hace que el usuario ingrese las imagenes 
+    //     }
     
-    const url = prompt("inserte una imagen")
-    i.setAttribute("src",url)
+    // const url = prompt("inserte una imagen")
+    // i.setAttribute("src",url)
 
-})
+// })

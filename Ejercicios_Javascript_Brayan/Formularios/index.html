@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet"  href="styles.css"> 
+    
+</head>
+<body>
+    <form>
+        <h1>Inscripcion a Hogwards</h1>
+<label id = "nombreError">
+    Nombre completo:
+    <input type="text" class="error" name="nombre" id="nombre"autocomplete ="off">
+</label>
+<label>
+    contrasena:
+<input type = "password" name="pass" id="pass">
+</label>
+<label>
+    Telefono:
+    <input type=" number" name ="tel" id="tel">
+</label>
+
+<fieldset>
+    <legend>hobbies :No mas de 4 </legend>
+    <label>
+        <input type="checkbox" name="hobbies" id="hobbiesNetflix">
+         Netflix
+    </label>
+    <label>
+        <input type="checkbox" name="hobbies" id="hobbiesfutbol">
+        Futbol
+    </label>
+    <lable>
+        <input type="checkbox" name="hobbies" id="hobbiesGym">
+        Gym
+    </label>
+    <label>
+        <input type="checkbox" name="hobbies" id="hobbiesVideosJuegos">
+        VideoJuegos
+    </label>
+
+</fieldset>
+<fieldset>
+    <legend>Pais de nacimiento </legend>
+<label>
+    <input type="radio" name="nacionalidad" id="nacionalidadArgentina">
+    Argentina
+</label>
+<label>
+    <input type="radio" name="nacionalidad" id="nacionalidadColombia">
+    Colombia
+</label>
+<label>
+    <input type="radio" name="nacionalidad" id="nacionalidadChile">
+    Chile
+</label>
+<label>
+    <input type="radio" name="nacionalidad" id="nacionalidadBrazil">
+    Brazil
+</label>
+</fieldset>
+
+<button disabled type="submit"> Inscribirme</button>
+
+    </form>
+    <script src="Ingreso.js"></script>
+    
+</body>
+</html>
