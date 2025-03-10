@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./misTareas.css">
+<body>
+    <header class="container">
+        <nav>
+            <h1>Solo leveling</h1>
+            <div class="user-info">
+             <p>Nombre</p>
+             <div class="user-image">
+               <button id="closeApp"><i class="fa-solid fa-right-from-bracket"></i>cerrar sesion</button>
+             </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+     <!--carga de tareas-->
+     <form class="nueva-tarea">
+        <input type="text" id="nueva-tarea" placeholder="nueva tarea">
+        <button type="submit"><i class="fa-solid fa-pencil"></i>Crear tarea</button>
+     </form>
+     <!--Contenedor vacio poara las que pase a pendientes-->
+       <ul class="tareas-pendientes">
+
+       </ul>
+         <h2>Traeas finalizadas <span id="cantidad-finalizadas">0</span></h2>
+         <!--contenedor vacio para las que pasen a terminadas-->
+         <ul  class="tareas-terminadas">
+
+         </ul>
+    </main>
+
+    <footer>
+        <h4>this is a footer</h4>
+    </footer>
+</body>
+<script src="./until.js"></script>
+<script src="tasks.js"></script>
+</html>
