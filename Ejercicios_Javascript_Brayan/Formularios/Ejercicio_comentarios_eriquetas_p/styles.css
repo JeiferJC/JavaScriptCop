@@ -1,0 +1,70 @@
+/* Estilo general para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Caja de comentarios */
+.comentarios {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+/* Los párrafos dentro de la caja de comentarios */
+.comentarios p {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #e9f5ff;
+    border-radius: 3px;
+    border: 1px solid #d0e4f7;
+}
+
+/* Entrada de texto */
+#comentario {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 24px); /* Ajusta el ancho para que se vea bien con padding */
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Botón de envío dentro del formulario */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje de error */
+#error {
+    display: none; /* Por defecto oculto */
+    color: #fff;
+    background-color: #dc3545;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Clase oculto para mostrar/ocultar elementos */
+.oculto {
+    display: none !important;
+}
