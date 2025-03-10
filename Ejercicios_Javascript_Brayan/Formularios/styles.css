@@ -1,0 +1,119 @@
+/* input.error:not([type=checkbox]):not([type=radio]){
+    border: 1px solid red; */
+/* } */
+span{
+    color:rgb(255, 0, 0)
+}
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2; /* Fondo suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Título del formulario */
+form h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las etiquetas */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Checkbox y radio */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Fieldsets */
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los botones */
+button {
+    width: 100%;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: not-allowed; /* Botón deshabilitado por defecto */
+}
+
+/* Botón activado */
+button:enabled {
+    background-color: #357a38;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Botón activado - hover */
+button:enabled:hover {
+    background-color: #45a049; /* Un tono más claro al pasar el mouse */
+}
+
+/* Mensaje de error */
+span {
+    color: #ff0000; /* Rojo */
+    font-size: 12px;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 500px) {
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="number"] {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
