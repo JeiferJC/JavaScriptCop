@@ -1,0 +1,103 @@
+/* Estilos generales */
+:root {
+    --color-primary: #1A1A1A; /* Fondo oscuro */
+    --color-secondary: #00BFFF; /* Azul eléctrico */
+    --color-accent: #8B0000; /* Rojo oscuro */
+    --color-text: #F0F0F0; /* Texto claro */
+    --color-border: #00BFFF; /* Bordes brillantes */
+  }
+  
+  body {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./thumb-1920-1372162.jpeg');
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    text-shadow: 0 0 5px var(--color-secondary);
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid var(--color-border);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 15px var(--color-secondary);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+    color: var(--color-text);
+    font-size: 14px;
+  }
+  
+  input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--color-text);
+    margin-top: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 5px var(--color-accent);
+  }
+  
+  button {
+    background-color: transparent;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-text);
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-secondary);
+  }
+  
+  .rounded {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--color-accent);
+    text-shadow: 0 0 5px var(--color-accent);
+  }

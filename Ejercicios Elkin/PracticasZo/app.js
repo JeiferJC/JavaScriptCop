@@ -1,6 +1,6 @@
 const formulario = document.forms[0];
 const inputBusqueda= document.querySelector("#busqueda");
-const busquedaRealizada = DocumentTimeline.querySelector("#busquedasRealizadas");
+const busquedaRealizada = document.querySelector("#busquedasRealizadas");
 const deleteBtn = document.querySelector("#delete");
 
 //obtenemis la infor del local para mas tarde almacenarla en memoria
@@ -12,7 +12,7 @@ const historialEnMemoria= obtenerBusquedaReralizada();
 //funcion para buscar google
 
 function busquedaGoogle(criterioBuscado){
-    location.href = 'https://www.google.com/search?q=' + encodeURIComponent(criterioBuscado);
+    location.href = `https://www.google.com/search?q=${criterioBuscado} `
 
 }
 
@@ -38,7 +38,7 @@ function obtenerBusquedaReralizada(){
             historialAlmacenado=[];
         }
        //---Recorre cada dato y lo imprime
-       historialAlmacenado.array.forEach(e => {
+       historialAlmacenado.forEach(e => {
         busquedaRealizada.innerHTML='<p>' +e + '</p>';
         
        });

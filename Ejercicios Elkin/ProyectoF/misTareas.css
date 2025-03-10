@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos del header */
+header {
+    background-color: #0d0d0d;
+    padding: 20px 0;
+    border-bottom: 2px solid #ff5722;
+}
+
+header h1 {
+    font-family: 'Impact', sans-serif;
+    font-size: 2.5rem;
+    color: #ff5722;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user-info p {
+    margin: 0 10px 0 0;
+    font-size: 1.2rem;
+}
+
+.user-image button {
+    background-color: #ff5722;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.user-image button:hover {
+    background-color: #e64a19;
+}
+
+/* Estilos del main */
+main {
+    padding: 20px 0;
+}
+
+.nueva-tarea {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nueva-tarea input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ff5722;
+    border-radius: 5px;
+    background-color: #262626;
+    color: #ffffff;
+}
+
+.nueva-tarea button {
+    width: 18%;
+    background-color: #ff5722;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nueva-tarea button:hover {
+    background-color: #e64a19;
+}
+
+.tareas-pendientes, .tareas-terminadas {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tareas-pendientes li, .tareas-terminadas li {
+    background-color: #262626;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #ff5722;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tareas-terminadas li {
+    border-left-color: #4caf50;
+}
+
+.tareas-terminadas h2 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #0d0d0d;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 2px solid #ff5722;
+    margin-top: 20px;
+}
+
+footer h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #ff5722;
+}
