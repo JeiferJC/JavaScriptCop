@@ -21,22 +21,23 @@ function obtenerBusquedasRealizadas (){
 
 //chequeamos  si existe o no algo y si no hay nada le mandamos un array vacio
 if(!historialAlmacenado){
-    historialAlmacenado=[];
+    historialAlmacenado=[];// aca solo esd una validacion ! si no existe algo devulevmelo vacio
 }
 
-    busquedasRealizadas.innerHTML = `<p>${historialAlmacenado.join(" - ")}</p>`
-    return historialAlmacenado;
+    busquedasRealizadas.innerHTML = `<p>${historialAlmacenado.join(" - ")}</p>`// se hace esto para que se muestre en la ventana por medio de innetHTml
+    // y se hace un < donde se toma el historilaAlmacenado y mediante el join lo separa por medio de un guion o coma o solo un espacio o sino saldria todo pegado.
+    return historialAlmacenado;// si se cumploe que hay ifnormacion qye me lo muestre
        
 }
     
-deleteBtn.addEventListener("click",()=> {
-    localStorage.removeItem("busquedasRealizadas")
-    busquedasRealizadas.innerHTML =``
+deleteBtn.addEventListener("click",()=> {//addEventListener para escuchar el click
+    localStorage.removeItem("busquedasRealizadas")// lo que hace es borrar el historial
+    busquedasRealizadas.innerHTML =``// esto sirve para que el remove tambien se muestre en la pagina y no solo en el console
 
 })
 formulario.addEventListener("submit",function(event){
-    event.preventDefault();
-    guardarBusqueda(inputBusqueda.value);
+    event.preventDefault();// este previene que se actulice toda la pagina/ o sino no se podria saber que esta pasando por dettras.
+    guardarBusqueda(inputBusqueda.value);// tod oesto se ejecuta desde el submit
     busquedasGoogle(inputBusqueda.value);
 
     formulario.reset();//el reset quita lo que uno escribio en el input de busqueda
