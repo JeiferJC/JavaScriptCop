@@ -1,0 +1,5 @@
+// endopint = es univo de la pagina URL + /productos
+//prodfuctos/crear = post estas direccion como /crear son otra direcciones las cuales se crean desde el backend
+//productos/editar = put
+//productos/listar = get
+
