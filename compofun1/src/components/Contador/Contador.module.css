@@ -1,0 +1,50 @@
+/* styles.css */
+
+/* Estilos para el contenedor principal */
+.container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+/* Estilos para el título */
+.titulo {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones */
+.boton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para el botón de restar */
+.restar {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para los botones */
+.boton:hover {
+    background-color: #0056b3;
+}
+
+.restar:hover {
+    background-color: #c82333;}
