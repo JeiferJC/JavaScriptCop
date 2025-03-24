@@ -1,19 +1,24 @@
 import React from "react";
-
-
+import styles from "./css/Padre.module.css"
+import Hijos from "./Hijos"
+console.log(styles)
 
 
 function Padre (props){
     return(
         
-        <div className="App">
+        <div className={styles.container}>
             <head>
             <h1>Hola</h1>
             </head>
 
             <main>
                 <h1>hola</h1>
-            <div>{props.children}</div>
+            <div>
+                <Hijos nombre= 'Francisco'/>
+                <Hijos nombre= 'Carlos'/>
+                 <Hijos nombre= 'Martha'/>
+            </div>
             </main>
             
             <footer>
