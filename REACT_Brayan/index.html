@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicando JSX con Gonzha y Sophie</title>
+</head>
+<body>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>//descarga react
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>//renderiza
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>//convierte
+
+    <div id="root"></div>
+    <script type="text/babel">//convierte
+
+    const lista=[//array
+    'Hmaburguezas',
+    'Empanadas',
+    'Pizza'
+
+]
+
+function Productos(props){// props seria un objeto 
+       //el producto que se ve despues del props es la lista 
+    const elements= props.producto.map((prod)=>// aca se pone props que seria la lista entra por props la lista
+    // prod se llena con lo que se le pasa de atras el cual es un parametro
+    // ahora se le pasa una funcion para que haga esa funcion en la lista en cada una de las cosas que hay en esa lista
+    // --- map recorre el array mas efectivo que foreach, solo itera las veces necesarias hasta llegar al final
+// el porps se le pone nombre producto 
+    <li>{prod}</li> //prod es el parametro donde se va guardando cada uno de los elementos del array
+)//se guarda en el prop de arriba y se imprime aca bajo
+
+
+const listado=
+<div>
+    <h2>Listado de productos</h2>
+    <ul>{elements}</ul> // se trae el elemnets a la lista y aca es donde se va iterar el map con lista
+    
+    </div>
+    return listado;// se retorna el listado el cual es traido por 
+}
+
+ReactDOM.render(// esto hace que el return recorra el array
+    //Renderizamos el listado
+    <Productos producto={lista}/>,// le psamos el primer parametro donde producto empieza llamrse el props.producto y le pasamos l alista
+    document.getElementById('root')// le digo a donde lo quiero renderizar
+)
+
+//HTML  CON JS UTILIZANDO JXS
+//                                         // se crean ingresar nombre la cual es guardada en una variable de js
+//     let nombre= prompt('Ingrese su nombre')// pront es una funcion para poner texto en la pagina pero se debe obtar por otros metodos
+//   const lista=                // se pone {} en nombre para decir q es algo de js pero aca en el html 
+//    <div>                                
+//     <h1>Hola bienvenido {nombre} </h1>  //utilizando jsx lo mostramos en pantalla
+//        <h2>Lista de productos</h2>
+
+//      <ul>
+//        <li>Hamburguesas</li>
+//         <li>Pizza</li>
+//         <li>Empanadas</li>
+//      </ul>
+
+//   </div>
+//   ReactDOM.render(lista, document.getElementById('root'))// se renderisa a travez de react
+
+</script>
+</body>
+</html>
