@@ -1,0 +1,11 @@
+componentes: son los que me representan una accion y se pueden pasar a mi app con un abreviacoin como <MiComponente />
+
+ejemplo de componenete--
+
+class MiComponente extends React.Component {
+    render() {
+        return <h1>¡Hola, mundo!</h1>;
+    }
+}
+
+no se puede utilizar la palabra class porque esta reservada y se debe utilizar className
