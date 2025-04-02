@@ -21,13 +21,13 @@
 
 ]
 
-function Productos(props){// props seria un objeto 
+function Productos(props){// props seria un objeto--- se hace la funcion y se le avisa que se le pasa un paametro-- el cuel en react se llama props
        //el producto que se ve despues del props es la lista 
     const elements= props.producto.map((prod)=>// aca se pone props que seria la lista entra por props la lista
     // prod se llena con lo que se le pasa de atras el cual es un parametro
     // ahora se le pasa una funcion para que haga esa funcion en la lista en cada una de las cosas que hay en esa lista
     // --- map recorre el array mas efectivo que foreach, solo itera las veces necesarias hasta llegar al final
-// el porps se le pone nombre producto 
+// el porps se le pone nombre producto  
     <li>{prod}</li> //prod es el parametro donde se va guardando cada uno de los elementos del array
 )//se guarda en el prop de arriba y se imprime aca bajo
 
@@ -38,13 +38,13 @@ const listado=
     <ul>{elements}</ul> // se trae el elemnets a la lista y aca es donde se va iterar el map con lista
     
     </div>
-    return listado;// se retorna el listado el cual es traido por 
+    return listado;// se retorna el listado  donde en listado est contenido la constante elemento que elemento tiene contenido todo lo anterior
 }
 
 ReactDOM.render(// esto hace que el return recorra el array
     //Renderizamos el listado
     <Productos producto={lista}/>,// le psamos el primer parametro donde producto empieza llamrse el props.producto y le pasamos l alista
-    document.getElementById('root')// le digo a donde lo quiero renderizar
+    document.getElementById('root')// le digo a donde lo quiero renderizar-- hasta aca al final se activa todo lo que hicimos al principio
 )
 
 //HTML  CON JS UTILIZANDO JXS
