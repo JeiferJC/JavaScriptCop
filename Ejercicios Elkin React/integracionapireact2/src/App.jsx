@@ -6,7 +6,7 @@ import styles from "./styles";
 
 const endpoint = "https://rickandmortyapi.com/api/character/?page="
 
-function App(){
+ export default function App(){
     const [loanding, setLoading]=useState(true)
     const [personajes,setPersonajes]= useState([])
      //Esto declara el numero de pagina 
@@ -35,8 +35,26 @@ function App(){
 
     if(loanding){
         return(
-            <h3>Obteniendo personajes </h3>
+            <h3>Obteniendo personajes..... </h3>
         )
     }
 
+    return(
+        <>
+        <div className={styles.buttonbar}>
+            <button onClick={handlePrev}>Prev</button>
+            <button onClick={handleNext}>Next</button>
+        </div>
+        <div className={styles.container}>
+            {personajes.map((personaje)=>
+            <Character key={personaje.id} name={personaje.name} image={personaje.image}/>
+            )
+            }
+        </div>
+        
+        
+        </>
+    )
+
 }
+
