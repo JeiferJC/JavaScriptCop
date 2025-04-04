@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const baseUrl= "https://rickandmortyapi.com/api"
+const baseUrl= "https://rickandmortyapi.com/api/"
 
 export const getCharacters= async (page= null)=>{
     const endpoint= `${baseUrl}character/${page ? `?page=${page}` : ''}`;
@@ -11,7 +11,7 @@ export const getCharacters= async (page= null)=>{
     return response.data.results;
 }
 
-export const getCharacteresById=async(id)=>{
+export const getCharactersById=async(id)=>{
     const endpoint= `${baseUrl}character/${id} `
     return await axios.get(endpoint);
 }
