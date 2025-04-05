@@ -1,0 +1,11 @@
+.container {
+    padding: 20px; /* Añade espacio interior */
+    display: flex; /* Utiliza un modelo de caja flexible */
+    flex-direction: column; /* Direcciona los elementos en columna */
+    align-items: center; /* Alinea los elementos al centro horizontalmente */
+    justify-content: center; /* Justifica el contenido al centro verticalmente */
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #333333; /* Color del texto */
+    background-color: #f0f0f0; /* Color de fondo (extra opcional) */
+  
+}
