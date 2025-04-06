@@ -21,6 +21,7 @@ export default function App(){
            <Layout>
             <div className="App"> 
                 <h1>React context</h1>
+               
             </div>
            </Layout>
         </themesContext.provider>
