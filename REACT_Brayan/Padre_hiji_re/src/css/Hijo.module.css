@@ -1,0 +1,12 @@
+.container {/*al momento de modular se puede pisar con el mismo nombre y no se reemplazan*/
+    padding: 10px; /* Espacio interior específico para el hijo */
+    font-size: 16px; /* Tamaño de la fuente del hijo */
+    color: #555555; /* Color del texto del hijo */
+    background-color: #e0e0e0; /* Color de fondo para destacar el hijo */
+    border: 1px solid #cccccc; /* Borde para diferenciar el hijo */
+    align-self: flex-start; /* Alineación específica del hijo dentro de Flexbox */
+    margin: 5px; /* Espacio exterior alrededor del hijo */
+    border-radius: 5px; /* Bordes redondeados para darle estilo */
+  
+
+}
