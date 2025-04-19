@@ -8,7 +8,7 @@ import Home from './paginas/Home';
 import SobreNosotros from './paginas/SobreNosotros';
 import Rutas from './paginas/Rutas';
 import RutasPath from './paginas/RutasPath';
-
+import RutasQuery from './paginas/RutasQuery';
 
 const router = createBrowserRouter(// se ponen [] porque es un pack qeu se ponen varios elementos-- el pathcarga la ruta principal
   [
@@ -33,6 +33,11 @@ element: <SobreNosotros/>
           path: '/rutas-path/:id/:slug',
           element: <RutasPath/>
            },
+           {
+            path: '/rutas/query-sttring',
+            element: <RutasQuery/>
+             },
+               
              
       ]
     }

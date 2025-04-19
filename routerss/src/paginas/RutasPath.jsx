@@ -7,8 +7,8 @@ const RutasPath = () => {
     <>
 <h2>Ejemplos parametros path</h2>
 <ul>
-    <li>Id:{id}</li>
-    <li>Sug:{slug}</li>
+    <li>id:{id}</li>
+    <li>slug:{slug}</li>
 </ul>
     </>
   )

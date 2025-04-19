@@ -23,14 +23,16 @@ const Rutas = () => {
         <li>
           <Link to="Sobre-Nosotros"> Sobre Nosotros</Link>
         </li>
+        
         <li>
-          <Link to="/rutas/path/1/hola-mundo"> Parametros Path</Link>
+            <Link to='rutas/path/1/hola-mundo'> Rutas Path</Link>
+        </li>
+       
+        <li>
+          <Link to={`/rutas-path/${id}/${slug}`}> Parametros Path</Link>
         </li>
         <li>
-          <Link to={`/rutas/path/${id}/${slug}`}> Parametros Path</Link>
-        </li>
-        <li>
-          <Link to={`/rutas/path/${id}`}> Parametros Path</Link>
+          <Link to={`/rutas/query-sttring?id=${id}&slug=${slug}`}> Parametros Query String</Link>
         </li>
       </ul>
     </div> // forma dianmica y estatica
