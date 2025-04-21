@@ -1,14 +1,19 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-// import App from './App.jsx';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./../public/css/blog.css"
+import "./Index.css"
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 
-import Frontend from './componentes/Layaout';
+
+import Frontend from './componentes/Frontend';
 import Home from './paginas/Home';
 import SobreNosotros from './paginas/SobreNosotros';
 import Rutas from './paginas/Rutas';
 import RutasPath from './paginas/RutasPath';
 import RutasQuery from './paginas/RutasQuery';
+import ErrorPersonalizado from './paginas/ErrorPersonalizado';
+import Error404 from './paginas/Error404';
 
 const router = createBrowserRouter(// se ponen [] porque es un pack qeu se ponen varios elementos-- el pathcarga la ruta principal
   [
@@ -35,10 +40,13 @@ element: <SobreNosotros/>
            },
            {
             path: '/rutas/query-sttring',
-            element: <RutasQuery/>
+            element: <RutasQuery/>,
+            errorElement: <ErrorPersonalizado/>//para manejar errores
              },
-               
-             
+            {
+              path: "*",
+              element: <Error404/>
+            },
       ]
     }
   ]
